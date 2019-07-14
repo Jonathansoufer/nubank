@@ -2,29 +2,19 @@ import React from "react";
 import { View } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 
-import { 
-  Container,  
+import {
   Content,
   CardHeader,
   CardContent,
   Title,
   Description,
   Annotation,
-  CardFooter 
-  } from "./styles";
+  CardFooter
+} from "./styles";
 
-import Header from "../../components/Header/";
-import Tabs from "../../components/Tabs/";
-import Card from "../../components/Card/";
-import Menu from "../../components/Menu/";
-
-export default function Main() {
+export default function Card() {
   return (
-    <Container>
-      <Header />
-
-      <Content>
-      <Menu />
+    <Content>
       <Card>
         <CardHeader>
           <Icon name="attach-money" size={28} color="#666" />
@@ -42,7 +32,5 @@ export default function Main() {
         </CardFooter>
       </Card>
     </Content>
-      <Tabs />
-    </Container>
   );
 }
